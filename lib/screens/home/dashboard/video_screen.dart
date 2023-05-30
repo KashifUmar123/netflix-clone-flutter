@@ -29,14 +29,14 @@ class _VideoScreenState extends State<VideoScreen> {
     setLandscape();
   }
 
-  Future setLandscape() async {
+  setLandscape() async {
     await SystemChrome.setPreferredOrientations([
       DeviceOrientation.landscapeLeft,
       DeviceOrientation.landscapeRight,
     ]);
   }
 
-  Future setAllOrientationToDefault() async {
+  setAllOrientationToDefault() async {
     await SystemChrome.setPreferredOrientations(DeviceOrientation.values);
   }
 
